@@ -127,6 +127,9 @@ header .textos-header {
   
 }
 
+.fuente {
+    font-size: 10px;
+}
 
 
 
@@ -135,6 +138,7 @@ header .textos-header {
 /* Galeria Portafilo*/
 
 .portafolio {
+    padding-top: 0;
     background: white;
 }
 
