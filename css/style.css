@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #642a73;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/**************************************************************************************************************/
+/*  **************************************************  HEADER ********************************************** */
+header {
+    width:100%;
+    height: 600px;
+    background: #1a0b7a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(67, 33%, 51%, 0.397), hsla(0, 0%, 39%, 0.434)), url('#'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, hsla(67, 33%, 51%, 0.21), hsla(0, 0%, 39%, 0.434)), url('#'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a {
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover { 
+    text-decoration: underline;  
+}
+
+header .textos-header {
+    display:flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.textos-header h1 {
+    font-size: 90px;
+    font-weight: 300;
+    color:yellow;
+}
+
+.textos-header h2 {
+  
+    font-size: 50px;
+    font-style: oblique;
+    color: blue;
+    border-bottom: 5px solid red;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/**************************************************************************************************************/
+/*  ************************************************  ABOUT US ********************************************** */
+
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;  /* distribuye el espacion*/
+
+}
+
+.imagen-about-us {
+    width: 48%;
+}
+
+.sobre-nosotros .contenidos-textos {
+    width: 48%;
+}
+
+.contenidos-textos h3 {
+    margin: 15px;
+
+}
+
+.contenidos-textos h3 span {
+    background: #4d0686;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width:30px ;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0, .5);
+    margin-right: 5px;
+}
+
+.contenidos-textos p {
+    padding: 0 0 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/**************************************************************************************************************/
+/*  *****************************************Galeria Portafilo ********************************************** */
+/* Galeria Portafilo*/
+
+.portafolio {
+    background: white;
+}
+
+.galeria-port {
+   
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+}
+
+.imagen-port { 
+    display: flex;
+    width: 24%;
+ 
+    margin-bottom: 10px;
+    overflow: hidden;
+    position:  relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0,0,0, .5);
+}
+
+.imagen-port > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273, 91%, 27%, 0.7);
+
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img {
+    width: 50px;
+}
+
+.hover-galeria p {
+    color: white;
+}
+
+.imagen-port:hover .hover-galeria {
+    transform: scale(1);
+}
+
+
+/**************************************************************************************************************/
+/*  *****************************************   CLIENTES       ********************************************** */
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card {
+    background: #1a0b7a;
+    display: flex;
+    width: 60%;
+    height: 200px;
+    align-items: center;
+    justify-self: space-evenly;
+    box-shadow: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0, .6);
+}
+
+.cards .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card {
+    font-size: 10px;
+    width: 80%;
+    color: aliceblue;
+    padding-left: 30px;
+}
+
+.cards .card > .contenido-texto-card p {
+    font-weight: 300;
+    padding-top: 5px;
+
+}
+
+/**************************************************************************************************************/
+/*  *****************************************   Our Tema      ********************************************** */
+
+.about-services {
+    background: rgba(99, 101, 231, 0.274);
+    padding-bottom: 30px;
+}
+
+.servicio-cont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.servicio-ind {
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img {
+    width: 90%;
+}
+
+.servicio-ind h3 {
+    margin: 10px 0;
+}
+
+.servicio-ind p {
+    font-weight: 300;
+    text-align: justify;
+}
+
+/**************************************************************************************************************/
+/*  *****************************************   footer      ********************************************** */
+
+footer {
+    background: rgba(0,0,0, .6);
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer { 
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 2px solid white;
+}
+
+
+.content-foo {
+    text-align: center;
+}
+
+.content-foo h4 {
+    color: wheat;
+    border-bottom: 4px solid red;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p {
+    color: black;
+    font-size: 30px;
+}
+
+.titulo-final {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: white;
+}
+
+
+.regreso_home {
+    color:red;
+    width: 100%;
+    padding-top: 4px;
+    text-align: center;
+}
