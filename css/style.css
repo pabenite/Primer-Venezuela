@@ -131,6 +131,20 @@ header .textos-header {
     font-size: 10px;
 }
 
+.contenido-texto-card_1 {
+    font-size: 15px;
+    color: white;
+    padding-left: 10px;
+    justify-content:space-evenly;
+    text-align: justify;
+   
+}
+.contenido-texto-card_2 {
+    font-size: 35px;
+    color: white;
+
+   
+}
 
 
 /**************************************************************************************************************/
@@ -201,29 +215,85 @@ header .textos-header {
 .cards {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .cards .card {
     background: #1a0b7a;
     display: flex;
     width: 60%;
-    height: 200px;
+    height: 400px;
     align-items: center;
     justify-self: space-evenly;
     box-shadow: 5px;
     box-shadow: 0 0 6px rgba(0,0,0, .6);
 }
 
-.cards .card img {
-    width: 100px;
-    height: 100px;
+
+.cards .card-1 {
+    background: #1a0b7a;
+    display: flex;
+    width: 50%;
+    height: 300px;
+    align-items: center;
+    justify-self: space-evenly;
+    box-shadow: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0, .6);
+}
+
+
+.cards .card-2 {
+    background: #1a0b7a;
+    display: flex;
+    width: 50%;
+    height: 300px;
+    align-items: center;
+    justify-self: space-evenly;
+    box-shadow: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0, .6);
+
+}
+
+.cards .card-1 img {
+    width: 240px;
+    height: 300px;
     object-fit: cover;
     border: 3px solid white;
-    border-radius: 50%;
+    /**border-radius: 40%;*/
+    display: block;
+}
+
+.cards .card_2 img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    /**border: 3px solid white;**/
+    /**border-radius: 50%; **/
     display: block;
 }
 
 .cards .card > .contenido-texto-card {
+    font-size: 10px;
+    width: 100%;
+    color: aliceblue;
+    padding-left: 10px;
+}
+
+.cards .card-1 > .contenido-texto-card-1 {
+    font-size: 15px;
+    width: 50%;
+    color: aliceblue;
+    padding-left: 10px;
+}
+
+.cards .card-2 > .contenido-texto-card-2 {
+    font-size: 12px;
+    width: 60%;
+    color: aliceblue;
+    padding-left: 10px;
+}
+
+.cards .card-2 > .contenido-texto-card {
     font-size: 10px;
     width: 80%;
     color: aliceblue;
@@ -235,6 +305,40 @@ header .textos-header {
     padding-top: 5px;
 
 }
+
+.cards .card-1 > .contenido-texto-card-1 p {
+    font-weight: 200;
+    padding-top: 5px;
+    text-align: justify;
+
+}
+
+.cards .card-2 > .contenido-texto-card-2 p {
+    font-weight: 30px;
+    padding-top: 15px;
+    text-align: justify;
+
+}
+
+.batalla {
+    padding-left: 250px;
+    padding-top: 40px;
+    width: 50%;
+    height: 100%;
+    text-align: justify;
+}
+.contenedor-image img {
+    padding-top: 50px;
+    width: 100%;
+    height: 050%;
+}
+.batalla h1 {
+     padding-left: 200px;
+     padding-bottom: 20px;
+}
+
+
+
 
 /**************************************************************************************************************/
 /*  *****************************************   Our Tema      ********************************************** */
